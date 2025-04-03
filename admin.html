@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="admin-container">
+    <img src="bolalalogo.png" alt="Chatbot Logo" class="admin-logo">
+    <h2>Chatbot Admin Panel</h2>
+    <!-- rest of the admin panel -->
+
+
+        <label>Question:</label>
+        <input type="text" id="question" placeholder="Enter a question">
+
+        <label>Response:</label>
+        <input type="text" id="response" placeholder="Enter the response">
+
+        <button onclick="updateResponse()">Save Response</button>
+<div>
+        <h3>Current Responses</h3>
+        <ul id="response-list"></ul>
+		</div>
+<div>
+        <h3>Unanswered Questions</h3>
+        <ul id="unanswered-list"></ul>
+</div>
+<div>
+        <h3>Contact Messages</h3>
+        <ul id="contact-messages-list"></ul>
+		</div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

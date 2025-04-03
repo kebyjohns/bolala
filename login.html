@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+	<img src="bolalalogo.png" alt="Chatbot Logo" class="admin-logo">
+        <h2>Admin Login</h2>
+        <label>Username:</label>
+        <input type="text" id="username" placeholder="Enter username">
+        
+        <label>Password:</label>
+        <input type="password" id="password" placeholder="Enter password">
+        
+        <button onclick="login()">Login</button>
+        <p id="error-message" class="error-message"></p>
+    </div>
+
+    <script>
+        function login() {
+            const adminUsername = "admin";
+            const adminPassword = "password123";
+
+            let username = document.getElementById("username").value.trim();
+            let password = document.getElementById("password").value.trim();
+
+            if (username === adminUsername && password === adminPassword) {
+                localStorage.setItem("adminLoggedIn", "true");
+                window.location.href = "admin.html"; // Redirect to admin page
+            } else {
+                document.getElementById("error-message").innerText = "Invalid credentials!";
+            }
+        }
+    </script>
+</body>
+</html>

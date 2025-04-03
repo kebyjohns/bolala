@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contact-container">
+	<img src="bolalalogo.png" alt="Chatbot Logo" class="admin-logo">
+        <h2>Mande nou sa ou vle</h2>
+        <p>Voye yon mesaj ba nou, epi nap reponn ou byento!</p>
+
+        <label>Non ou:</label>
+		<br>
+		</br>
+        <input type="text" id="contact-name" placeholder="Enter your name">
+		<br>
+		</br>
+
+        <label>Imel ou:</label>
+		<br>
+		</br>
+        <input type="email" id="contact-email" placeholder="Enter your email">
+<br>
+		</br>
+        <label>Mesaj la:</label>
+		<br>
+		</br>
+        <textarea id="contact-message" placeholder="Write your message here..."></textarea>
+<br>
+		</br>
+        <button onclick="submitContactForm()">voyel ale</button>
+        <p id="contact-message-status"></p>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>
